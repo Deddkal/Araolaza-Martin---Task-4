@@ -246,7 +246,7 @@ tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(5), tbody tr:nt
     flex-wrap: wrap;
 }
 
-.contenedor__form label, input{
+.contenedor__form label,.contenedor__form input{
     font-size: 26px;
 
 }
@@ -309,10 +309,12 @@ tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(5), tbody tr:nt
 
 .conteiner__grade{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 80%;
+    gap: 30px;
 }
+
 
 .conteiner__grade h4{
     font-size: 1.8em;
@@ -327,7 +329,7 @@ tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(5), tbody tr:nt
 }
 
 .conteiner__school label{
-    font-size: 26px;
+    /* font-size: 26px; */
     margin: 3vhpx 20px;
 }
 
@@ -431,6 +433,10 @@ iframe:hover{
     color: #ffe11a;
     text-decoration: none;
     font-size: 5vh;
+}
+
+.super{
+    font-size: 16px;
 }
 
 
