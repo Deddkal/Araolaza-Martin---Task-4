@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League</title>
+    <link rel="shortcut icon" href="./imagenes/LogoMightyducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header__back">
+            <h1>Mighty Ducks Hockey League</h1>
+        </div>
+        <div class="header__back__dos"></div>
+        <div class="header__text">
+            <h2 class="header__info">Registration Form</h2>
+            <img src="./imagenes/LogoMightyducks-01.png" alt="logo HMDL" class="header__logo">
+        </div>
+        <nav class="contenedor__nav">
+            <a href="./registration.html">Home</a>
+            <a href="./about.html">About HMDL</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./gameinfo.html">Game Information</a>
+            <a href="./rules.html">Rules</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="#" id="active">Registration</a>
+        </nav>
+    </header>
+    <main class="contenedor__principal form">
+        
+        <section class="contenedor__data contenedor__form">
+            
+                <form target="_blank"  action="./show-data.html" method="get">
+                    <h3>Player Information</h3>
+                    <div class="conteiner__names">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="firstName" required>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="lastName" required>
+                    </div>
+                    <div class="conteiner__street">
+                    <label for="address">Street Address: </label>
+                    <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="conteiner__location">
+                    <label for="code_zip">City: </label>
+                    <input type="text" id="city" name="city" required>    
+                    <label for="code_zip">Zip Code: </label>
+                    <input type="text" id="code_zip" name="zipCode" required>
+                    </div>
+                    <div class="conteiner__info__player">
+                    <label for="birth">Birth Date(dd/mm/yyyy): </label>
+                    <input type="date" id="birth" required>
+                    <h4>Gender: </h4>
+                    <label for="gender_f">Female</label>
+                    <input type="radio" id="gender_f" name="gender" value="f">
+                    <label for="gender_m">Male</label>
+                    <input type="radio" name="gender" id="gender_m" value="m">
+                    </div>
+                    <div class="conteiner__grade">
+                    <h4>Grade:</h4>
+                    <input type="radio" name="grade" id="pre-school">
+                    <label for="pre-school"> Pre-School</label>
+                    <input type="radio" value="1st" name="grade" id="primero">
+                    <label for="primero"><sup>1st</sup></label>
+                    <input type="radio" value="2st" name="grade" id="segundo">
+                    <label for="segundo"><sup>2st</sup></label>
+                    <input type="radio" value="3st" name="grade" id="tercero">
+                    <label for="tercero"><sup>3st</sup></label>
+                    <input type="radio" value="4st" name="grade" id="cuarto">
+                    <label for="cuarto"><sup>4st</sup></label>
+                    <input type="radio" value="5st" name="grade" id="quinto">
+                    <label for="quinto"><sup>5st</sup></label>
+                    </div>
+
+                    <h3>Which elementary school do you live near?</h3>
+
+                    <h3>Closest School:</h3>
+                    <div class="conteiner__school">
+                    <label><input type="radio" name="school" id="aj_kat" value="AJ Katzenmaier"> AJ Katzenmaier</label>
+                    <label><input type="radio" name="school" id="gBay" value="greenbay"> Greenbay</label>
+                    <label><input type="radio" name="school" id="howardYeager"> Howard A Yeager</label>
+                    <label><input type="radio" name="school" id="majorie" value="majorie"> Marjorie P Hart</label>
+                    <label><input type="radio" name="school" id="nortyEle" value="north_elementary"> North Elementary</label>
+                    <label><input type="radio" name="school" id="southEle"> South Elementary</label>
+                    </div>
+                    <h3>What position(s) do you normally play? (check all that apply)</h3>
+                    <div class="conteiner__position">
+                    <label ><input type="checkbox" name="position" value="forward" id="forward"> Forward</label>
+                    <label ><input type="checkbox" name="position" value="defense" id="defense"> Defense</label>
+                    <label ><input type="checkbox" name="position" value="mindfield" id="mindfield"> Mindfield</label>
+                    <label ><input type="checkbox" name="position" value="goalkeeper" id="goalkeeper"> Goalkeeper</label>
+                    </div>
+
+                    <h3>Uniform Size: </h3>
+                    <div class="conteiner__size">
+                    <label><input type="radio" name="size" value="youthSmall" id="youthSmall"> Youth Small</label>
+                    <label><input type="radio" name="size" value="youthMedium" id="youthMedium"> Youth Medium</label>
+                    <label><input type="radio" name="size" value="youthLarge" id="youthLarge"> Youth Large</label>
+                    <label><input type="radio" name="size" value="small" id="small"> Small</label>
+                    <label><input type="radio" name="size" value="medium" id="medium"> Medium</label>
+                    <label><input type="radio" name="size" value="large" id="large"> Large</label>
+                    <label><input type="radio" name="size" value="extraLarge" id="extraLarge"> Extra-Large</label>
+                    </div>
+
+                    <h3>Permission to Play</h3>
+                    <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation
+                    By entering your name below, I here by agree and authorize the above. In addition, by entering your name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    <div class="conteiner__signature">
+                    <label >Parent/Guardian Signature <input type="text" id="signature" placeholder="Put your complete name" required></label>
+
+                    <label>Date: <input type="date" name="currentdate" id="currentdate"></label>
+                    </div>
+                    <div class="conteiner__btn">
+                    <input type="submit" id="sendBtn" value="Send Form" >
+
+                    <input type="reset" id="resetBtn" value="Reset" >
+                    </div>
+                </form>
+            
+        </section>
+
+
+    </main>
+    <footer>
+        
+     
+        <p class="footer__text">Copyright 2022 &copy; Araolaza Martin</p>
+    </footer>
+</body>
+</html>
