@@ -204,7 +204,7 @@ ol{
 
 .footer__text{
     margin: 10vh 6vw 0 0;
-    text-align: end;
+    text-align: center;
 }
 
 
@@ -462,16 +462,16 @@ iframe:hover{
         margin-top: 5vh;
         position: initial;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
     .contenedor__nav a{
         text-align: center;
-        align-self: auto;
+        align-self: center;
         flex-shrink: .5;
-        min-width: 40vw;
+        min-width: 80%;
     }
 
     .header__info__rules{
@@ -523,4 +523,80 @@ iframe:hover{
     }
 
 
+}
+
+@media screen and (max-width : 450px){
+    table{
+        min-width: fit-content;
+    }    
+
+    .gotop{
+        font-size: 16px;
+        width: 10%;
+        left: 0;
+        bottom: 4vh;
+        padding: 20px 80px 20px 0px;
+        border-radius: 15px;
+        text-align: center;
+        
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    iframe:hover{
+        scale: 1;
+    }
+
+    table{
+        font-size: 15px;
+        margin: auto;
+        padding: 1px 3px;
+    }
+
+    table th, table td{
+        padding: 5px 3px;
+    }
+
+    th,td,tr{
+        padding: 0px 3px;
+        width: fit-content;
+        margin-left: 0;
+        font-size: 15px;
+    }
+    
+    .contenedor__principal{
+        margin: 5px 1px;
+    }
+
+    .contenedor__map{
+        margin: auto;
+    }
+
+    header{
+        width: 100vw;
+    }
+
+    .contenedor__form{
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    .contenedor__data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1px 0px 3px 15px;
+    }
+
+    .contenedor__nav a:hover{
+        transform: translateX(0);
+        scale: 1;
+    }
+
+    .conteiner__position, .conteiner__size, .conteiner__school{
+        height: max-content;
+    }
 }
