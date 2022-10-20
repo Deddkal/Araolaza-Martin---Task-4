@@ -304,7 +304,7 @@ tbody tr:nth-child(1), tbody tr:nth-child(2), tbody tr:nth-child(5), tbody tr:nt
 
 .conteiner__info__player h4{
     
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 .conteiner__grade{
@@ -472,6 +472,11 @@ iframe:hover{
         align-self: center;
         flex-shrink: .5;
         min-width: 80%;
+    }
+
+    .contenedor__nav a:hover{
+        transform: translateX(0);
+        scale: 1;
     }
 
     .header__info__rules{
