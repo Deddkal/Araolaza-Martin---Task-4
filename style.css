@@ -91,7 +91,7 @@ body{
     width: 55%;
     display: flex;
     flex-direction: column;
-    margin-left: 17.5vw;
+    margin-left: 19vw;
 }
 
 .contenedor__principal p{
@@ -101,6 +101,7 @@ body{
 .contenedor__principal h3{
     font-size: 30px;
 }
+
 
 .index{
     align-self: center;
@@ -274,12 +275,16 @@ form{
     align-items: center;
     gap: 10px;
     height: fit-content;
-    width: 80%;
+    width: 100%;
 }
 
-.conteiner__names input{
-    width: 250px;
+
+.conteiner__names label{
+    /* width: 420px; */
+    display: inline-block;
 }
+
+
 
 
 .conteiner__street{
@@ -287,17 +292,36 @@ form{
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
+}
+
+.conteiner__street label{
+    display: inline-block;
+    width: 20%;
+    
+}
+
+.conteiner__street input{
+    width: 68%;
+    /* display: inline-block; */
 }
 
 
 
 .conteiner__location{
     display: flex;
-    width: 80%;
+    width: 100%;
     gap: 5px;
     align-items: center;
     flex-wrap: wrap ;
+}
+
+.con_zip{
+    width: 40%;
+}
+
+.con_zip input{
+    width: 40%;
 }
 
 
@@ -307,8 +331,8 @@ form{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    gap: 2px;
-    width: 80%;
+    gap: 5px;
+    width: 60vw;
 }
 
 .conteiner__info__player h4{
@@ -336,6 +360,20 @@ form{
     flex-wrap: wrap;
     height: 20vh;
     gap: 3vh;
+}
+
+.conteiner__name,.conteiner__lastname{
+    width: 100%;
+    display: inline-block;
+}
+
+.conteiner__name label.conteiner__lastname label{
+    width: 20%;
+    
+}
+
+.conteiner__name input,.conteiner__lastname input{
+    width: 60%;
 }
 
 .conteiner__school label{
